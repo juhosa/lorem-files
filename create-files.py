@@ -41,8 +41,13 @@ def get_content():
     return cont
 
 
-MAX = 4
-for i in range(1, MAX + 1):
-    content = get_content()
-    # print(content)
-    write_file(content, i)
+def main():
+    MAX = 4
+    for i in range(1, MAX + 1):
+        content = get_content()
+        # print(content)
+        write_file(content, i)
+
+
+if __name__ == '__main__':
+    main()
